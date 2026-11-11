@@ -1,0 +1,42 @@
+name: Gauge idea
+description: Propose a new gauge, readout, or calculation (math, code and mockups welcome; review only).
+title: "[Gauge idea] "
+labels: ["gauge-idea", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Math, code and mockups are reviewed by the maintainer only. Nothing here is run or added as-is; accepted ideas are rebuilt and must pass Grottle's golden checks."
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What should the gauge show, and why is it useful?
+    validations:
+      required: true
+  - type: textarea
+    id: math
+    attributes:
+      label: Suggested math
+      description: Formula or steps (for example, Sand per active hour = Δ% ÷ active minutes × 60).
+  - type: textarea
+    id: code
+    attributes:
+      label: Sample code (review only)
+      render: python
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockup image
+      description: Drag in a sketch or a Grottle-rendered mockup.
+  - type: input
+    id: version
+    attributes:
+      label: Grottle version
+  - type: input
+    id: skin
+    attributes:
+      label: Skin
+  - type: input
+    id: plan
+    attributes:
+      label: Plan type

@@ -1,0 +1,24 @@
+name: Suggestion
+description: Suggest an improvement to Grottle™.
+title: "[Idea] "
+labels: ["suggestion", "needs-triage"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would make Grottle better for you?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Grottle version
+  - type: input
+    id: skin
+    attributes:
+      label: Skin
+  - type: input
+    id: plan
+    attributes:
+      label: Plan type

@@ -1,0 +1,38 @@
+name: Habit-shift reading
+description: Anonymous, info-only reading Grottle drafts when one habit uses much more Sand per active hour than usual.
+title: "[Habit-shift reading] "
+labels: ["habit-shift"]
+body:
+  - type: markdown
+    attributes:
+      value: "Info only: no Sand %, bot names or chat text. It makes no claim about the cause."
+  - type: input
+    id: habit
+    attributes:
+      label: Habit (work type)
+    validations:
+      required: true
+  - type: input
+    id: baseline_rate
+    attributes:
+      label: Usual rate (% Sand per active hour)
+    validations:
+      required: true
+  - type: input
+    id: new_rate
+    attributes:
+      label: Recent rate (% Sand per active hour)
+    validations:
+      required: true
+  - type: input
+    id: n
+    attributes:
+      label: Number of readings
+  - type: input
+    id: date
+    attributes:
+      label: Date (YYYY-MM-DD)
+  - type: input
+    id: version
+    attributes:
+      label: Grottle version

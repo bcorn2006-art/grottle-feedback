@@ -1,0 +1,37 @@
+name: Bug report
+description: Something in Grottle™ didn't work as expected.
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Grottle drafted this for you. Check it, remove anything private, then press Submit. Issues are public."
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Grottle version
+      placeholder: "1.0.5"
+    validations:
+      required: true
+  - type: input
+    id: skin
+    attributes:
+      label: Skin
+      placeholder: skin2
+  - type: input
+    id: plan
+    attributes:
+      label: Plan type
+      placeholder: X Premium
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Gauge screenshot (optional)
+      description: Drag an image here if it helps. Crop out anything private.
